@@ -1,12 +1,4 @@
 let slideIndex = 1;
-var slide_1 = "mySlides";
-var slide_2 = "mySlides2";
-
-for (let index = 1; index < 2; index++) {
-  showSlides(1, "slide_" + index);
-}
-// showSlides(1, slide_1);
-// showSlides(1, slide_2);
 
 // Next/previous controls
 function plusSlides(n, slideName) {
@@ -36,4 +28,25 @@ function showSlides(n, slideName) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+var mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

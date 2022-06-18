@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <nav class="zone">
+    <nav class="zone" id="home">
       <ul class="main-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Certificates</a></li>
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li class="push"><a href="#">Contact Me!</a></li>
       </ul>
     </nav>
@@ -26,8 +26,22 @@
             wwwwwwwwwwwwwwwwwwwww
           </p>
         </div>
-        <h4>Known Language and Tools</h4>
-        <div class="profile-skills">
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+      <div class="content">
+        <div class="content-container">
+          <div class="content">
+            <img src="img/icons/email.png" />
+            <p><span class="bold">Email:</span> calvink.palma@gmail.com</p>
+          </div>
+          <div class="content">
+            <img src="img/icons/phone.png" />
+            <p><span class="bold">Phone:</span> +639334235465</p>
+          </div>
+        </div>
+        <div class="content-skills">
           <div class="skills">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -77,30 +91,58 @@
             />
           </div>
           <!-- <div class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt="BOOTSTRAP"
-            />
-          </div> -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt="BOOTSTRAP"
+          />
+        </div> -->
         </div>
       </div>
     </div>
-    <!-- CONTACT -->
-    <div class="contact">
-      <div class="content">
-        <img src="img/icons/email.png" />
-        <p>Email: calvink.palma@gmail.com</p>
-      </div>
-      <div class="content">
-        <img src="img/icons/phone.png" />
-        <p>Phone: +639334235465</p>
-      </div>
-    </div>
     <!-- Projects -->
-    <div class="projects">
+    <div class="projects" id="projects">
       <h1>Projects</h1>
       <hr />
       <div class="zone blue grid-wrapper">
+        <div class="box zone">
+          <div class="mySlides5 fade">
+            <img src="img/mern/1.png" style="width: 100%" />
+          </div>
+          <div class="mySlides5 fade">
+            <img src="img/mern/2.png" style="width: 100%" />
+          </div>
+          <div class="mySlides5 fade">
+            <img src="img/mern/3.png" style="width: 100%" />
+          </div>
+          <div class="mySlides5 fade">
+            <img src="img/mern/4.png" style="width: 100%" />
+          </div>
+          <div class="mySlides5 fade">
+            <img src="img/mern/5.png" style="width: 100%" />
+          </div>
+          <div class="mySlides5 fade">
+            <img src="img/mern/6.png" style="width: 100%" />
+          </div>
+          <p>
+            <span class="bold">Project Name:</span> Faculty Management System
+            (Web)
+          </p>
+          <p>
+            <span class="bold">Made using:</span> MongoDB, Express, React,
+            NodeJs (MERN)
+          </p>
+          <p>
+            <span class="bold">Description:</span> This project is made by our
+            group.
+          </p>
+          <p>
+            <span class="bold">Role:</span> React Developer/Some backend
+            (NodeJs/Express)
+          </p>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1 , 'mySlides5' )">&#10094;</a>
+          <a class="next" onclick="plusSlides(1 , 'mySlides5')">&#10095;</a>
+        </div>
         <div class="box zone">
           <div class="mySlides fade">
             <img src="img/bokal/1.jpg" style="width: 100%" />
@@ -149,10 +191,58 @@
           <a class="prev" onclick="plusSlides(-1 , 'mySlides2' )">&#10094;</a>
           <a class="next" onclick="plusSlides(1 , 'mySlides2')">&#10095;</a>
         </div>
+        <div class="box zone">
+          <div class="mySlides3 fade">
+            <img src="img/puzzle/1.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides3 fade">
+            <img src="img/puzzle/2.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides3 fade">
+            <img src="img/puzzle/3.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides3 fade">
+            <img src="img/puzzle/4.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides3 fade">
+            <img src="img/puzzle/5.jpg" style="width: 100%" />
+          </div>
+          <p><span class="bold">Project Name:</span> Puzzle Switch</p>
+          <p><span class="bold">Made using:</span> Unity</p>
+          <p><span class="bold">Year:</span> 2020</p>
+          <p><span class="bold">Type:</span> Mobile Game</p>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1 , 'mySlides3' )">&#10094;</a>
+          <a class="next" onclick="plusSlides(1 , 'mySlides3')">&#10095;</a>
+        </div>
+        <div class="box zone">
+          <div class="mySlides4 fade">
+            <img src="img/bouncy/1.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides4 fade">
+            <img src="img/bouncy/2.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides4 fade">
+            <img src="img/bouncy/3.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides4 fade">
+            <img src="img/bouncy/4.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides4 fade">
+            <img src="img/bouncy/5.jpg" style="width: 100%" />
+          </div>
+          <p><span class="bold">Project Name:</span> Bouncy Head</p>
+          <p><span class="bold">Made using:</span> Unity</p>
+          <p><span class="bold">Year:</span> 2019</p>
+          <p><span class="bold">Type:</span> Mobile Game</p>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1 , 'mySlides4' )">&#10094;</a>
+          <a class="next" onclick="plusSlides(1 , 'mySlides4')">&#10095;</a>
+        </div>
       </div>
     </div>
     <!-- Certificates -->
-    <div class="certificates">
+    <div class="certificates" id="certificates">
       <h1>Certificates</h1>
       <hr />
       <div class="zone blue grid-wrapper">
@@ -163,9 +253,11 @@
       </div>
     </div>
     <footer class="zone black">
-      My Portfolio I made using HTML, CSS, JAVASCRIPT &copy; 2022
+      My Portfolio I made using pure HTML, CSS, JAVASCRIPT &copy; 2022
     </footer>
-
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+      &#11165;
+    </button>
     <!-- JS SCRIPT -->
     <script src="script.js"></script>
   </body>

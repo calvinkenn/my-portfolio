@@ -4,6 +4,7 @@ html {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .zone {
@@ -60,14 +61,29 @@ a {
 
 /* CONTACT */
 .contact {
-  width: max-content;
+  /* width: max-content; */
   margin-left: 30px;
-  grid: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.contact .content{
+.content-container {
+  border-right: 3px solid black;
+  padding-right: 10px;
+}
+
+.content-skills {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact img {
@@ -197,17 +213,24 @@ footer {
   text-align: left;
 }
 
-.box .bold {
+.bold {
   font-weight: bold;
 }
 
 .mySlides,
-.mySlides2 {
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5 {
   display: none;
 }
 
-.mySlides:first-of-type,  .mySlides2:first-of-type{
-  display: block;  
+.mySlides:first-of-type,
+.mySlides2:first-of-type,
+.mySlides3:first-of-type,
+.mySlides4:first-of-type,
+.mySlides5:first-of-type {
+  display: block;
 }
 
 /* Next & previous buttons */
@@ -276,4 +299,26 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
 }
